@@ -15,7 +15,7 @@
  */
 
 plugins {
-  id 'com.brambolt.gradle.pluginbuild' apply false
+  id 'com.brambolt.gradle.build.plugin' apply false
   id 'com.brambolt.gradle.testkit' apply false
 }
 
@@ -41,13 +41,13 @@ ext {
   pluginId = 'com.brambolt.gradle.pathing'
   pluginTags = ['pathing']
   pluginWebsite = 'https://github.com/brambolt/gradle-pathing'
-  projectVersion = bramboltProjectVersion
+  release = bramboltRelease
   vcsUrl = 'https://github.com/brambolt/gradle-pathing'
 }
 
-apply plugin: 'com.brambolt.gradle.pluginbuild'
+apply plugin: 'com.brambolt.gradle.build.plugin'
 apply plugin: 'com.brambolt.gradle.testkit'
 
 dependencies {
-  compile 'com.brambolt:brambolt-rt:SNAPSHOT'
+  implementation "com.brambolt:brambolt-rt:${version}"
 }
