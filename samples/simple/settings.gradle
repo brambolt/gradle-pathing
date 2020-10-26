@@ -20,5 +20,5 @@ pluginManagement {
   }
 }
 
-rootProject.name = 'gradle-pathing-simple-sample'
+rootProject.name = 'brambolt-gradle-pathing-simple-sample'
 

@@ -26,5 +26,5 @@ pluginManagement {
   }
 }
 
-rootProject.name = 'gradle-pathing'
+rootProject.name = 'brambolt-gradle-pathing'
 
